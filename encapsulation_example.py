@@ -1,16 +1,16 @@
-class Person:
-    def _init_(self, name, age, gender):
+class Cars:
+    def _init_(self, make, model, year):
     #three attributes given to person class
-        self.name = name
-        self.age = age
-        self.gender = gender
+        self.make = make
+        self.model = model
+        self.year = year
     #the _init_ method gets called when you create 
     #a new object in a class. It takes 4 parameters:
-    #self, name, age, and gender...self refers to
+    #self, make, age, and gender...self refers to
     #the object itself and the other parameters are used
     #to initialize the attributes of the object
         def greet(self):
             print(f"Hello, my name is {self.name} and I am a {self.gender} person.")
             
-person = Person("Alice", 30, "female")
-person.greet()
+Cars = Cars("Alice", 30, "female")
+Cars.greet()
